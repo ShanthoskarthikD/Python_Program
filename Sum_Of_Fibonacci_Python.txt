@@ -1,0 +1,10 @@
+Number = int(input("Enter the number of terms: "))
+a, b = 0, 1
+sum_fib = a + b
+print("Fibonacci Series:", a, b, end=" ")
+for _ in range(2, terms):
+    next = a + b
+    print(next, end=" ")
+    sum_fib += next
+    a, b = b, next
+print("\nSum of Fibonacci Series:", sum_fib)
